@@ -1,3 +1,4 @@
 MNIST_data/
 .ipynb_checkpoints/
 tensorboard/
+pretrained-model/
