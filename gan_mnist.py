@@ -189,8 +189,8 @@ for i in range(100000):
 		z_batch = np.random.normal(0, 1, [1, z_dimensions])
 		generating_image_tensor = generator(z_placeholder, 1, z_dimensions)
 		generated_image = sess.run(generating_image_tensor, feed_dict={z_placeholder:z_batch})
-		plt.imshow(generated_image[0].reshape([28,28]), cmap='gray')
-		plt.show()
+		# plt.imshow(generated_image[0].reshape([28,28]), cmap='gray')
+		# plt.show()
 	    
 		# Show discriminator's estimate
 		im = generated_image[0].reshape([1, 28, 28, 1])
